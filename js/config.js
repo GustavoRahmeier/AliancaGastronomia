@@ -1,5 +1,6 @@
 // ===== CONFIGURAÇÕES EDITÁVEIS =====
 const SITE_CONFIG = {
+  pedidoLink: "https://qualyjet.app.br/alianca_gastronomia/",
   whatsapp: "5500000000000", // DDI+DDD+número, só dígitos. CONFIRMAR antes de publicar
   whatsappMsg: "Olá! Gostaria de fazer um pedido na Aliança Gastronomia.",
   instagram: "https://www.instagram.com/aliancagastronomia_/",
