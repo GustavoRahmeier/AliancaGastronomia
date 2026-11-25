@@ -1,0 +1,4 @@
+Coloque aqui suas fotos e o logotipo com estes nomes (ou ajuste os caminhos no index.html):
+logo-alianca.png, hero-hamburguer.jpg, sobre-alianca.jpg, batata-cheddar-bacon.jpg,
+ambiente-interno.jpg, ambiente-externo.jpg, delivery.jpg, galeria-01.jpg ... galeria-06.jpg
+Produtos do cardápio: defina o caminho da foto em js/config.js
