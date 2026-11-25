@@ -731,14 +731,21 @@ footer small {
 h1 { font-size: clamp(2.4rem, 6vw, 5rem); }
 
 @media (max-width: 900px) {
-  .hero { align-items: flex-end; padding-bottom: 90px; }
-  .hero > .ph { width: 100%; -webkit-mask-image: none; mask-image: none; }
-  .hero > .ph img { object-position: 70% 40%; }
-  .hero > .ph::before {
-    background:
-      linear-gradient(0deg, rgba(8,8,8,.98) 0%, rgba(8,8,8,.85) 38%, rgba(8,8,8,0) 72%),
-      linear-gradient(180deg, rgba(8,8,8,.6) 0%, rgba(8,8,8,0) 18%);
+  .hero { align-items: flex-end; padding-bottom: 56px; }
+
+  /* foto no topo, dissolvendo no preto */
+  .hero > .ph {
+    inset: 0 0 auto 0; width: 100%; height: 64svh;
+    -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
   }
-  .hero-in { padding-top: 0; }
-  h1 { font-size: clamp(2.2rem, 10vw, 3.2rem); }
+  .hero > .ph img { object-position: 72% 40%; }
+  .hero > .ph::before {
+    background: linear-gradient(180deg, rgba(8,8,8,.7) 0%, rgba(8,8,8,0) 22%); /* só para o menu ler bem */
+  }
+
+  .hero-in { padding-top: 0; max-width: 100%; }
+  h1 { font-size: clamp(2rem, 9.5vw, 2.8rem); }
+  .lead { font-size: .95rem; margin: .9rem 0 1.5rem; }
+  .scroll { display: none; }
 }
